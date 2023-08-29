@@ -1,6 +1,6 @@
 pipeline {
    
-    agent { node { label 'TPCATGBUILD01' } }
+    agent { node { label '{{NODE}}' } }
 
     parameters {
         string(name: 'TARGET_URL', defaultValue: '', description: 'The URL of the website to crawl.')
