@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Analysis Report</title>
+</head>
+<body>
+    <h1>Website Analysis Report</h1>
+
+    <h2>Unused CSS Classes</h2>
+    <ul>
+        {% for css_class in unused_css_classes %}
+            <li>
+                {{ css_class }}
+                <small>Source: {{ css_class_sources[css_class] }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Unused JavaScript Functions</h2>
+    <ul>
+        {% for js_function in unused_js_functions %}
+            <li>
+                {{ js_function }}
+                <small>Source: {{ js_function_sources[js_function] }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
