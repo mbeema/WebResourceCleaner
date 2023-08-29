@@ -1,3 +1,10 @@
+# --------------------------------------------------------------
+# Python Web Crawler for Identifying Unused CSS and JavaScript
+# Author: Madhukar Beema
+# Date: 2023-08-29
+# Version: 1.0
+# Description: This script crawls a website to identify unused
+#              CSS classes and JavaScript functions.
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
